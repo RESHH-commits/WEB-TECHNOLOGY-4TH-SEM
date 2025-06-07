@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      padding: 20px;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    .container {
+      display: flex;
+      min-height: 600px; /* Makes the middle section tall */
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .left, .right {
+      width: 20%;
+      padding: 20px;
+      border-right: 1px solid black;
+      box-sizing: border-box;
+    }
+
+    .right {
+      border-right: none;
+      border-left: 1px solid black;
+    }
+
+    .content {
+      width: 60%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 Welcome to Book World</h1>
+    <p>Explore, Read, and Discover Your Next Favorite Book!</p>
+  </header>
+
+  <div class="container">
+    <div class="left">
+      <h3>Genres</h3>
+      <ul>
+        <li><a href="https://www.gutenberg.org/ebooks/bookshelf/486">Fiction</a></li>
+        <li><a href="https://www.gutenberg.org/ebooks/search/?query=non+fiction">Non Fiction</a></li>
+        <li><a href="https://www.gutenberg.org/ebooks/search/?query=fantasy">Fantasy</a></li>
+        <li><a href="https://www.gutenberg.org/ebooks/bookshelf/480">Science Fiction</a></li>
+        <li><a href="https://www.gutenberg.org/ebooks/bookshelf/427">Biography</a></li>
+        <li><a href="https://www.gutenberg.org/ebooks/search/?query=history">History</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>Featured Book</h2>
+      <h3>"The Great Adventure"</h3>
+      <p><strong>Author:</strong> Jane Storyteller</p>
+      <p><strong>Description:</strong> A thrilling journey through unknown lands, friendships, and self-discovery. Perfect for fans of epic storytelling.</p>
+      <p><strong>Why You’ll Love It:</strong></p>
+      <ul>
+        <li>Gripping plot</li>
+        <li>Relatable characters</li>
+        <li>Beautiful writing style</li>
+      </ul>
+
+      <h2>Book of the Month</h2>
+      <p>"Hidden Libraries of the World" - A documentary-style exploration of secret libraries and lost books throughout history.</p>
+    </div>
+
+    <div class="right">
+      <h3>Latest Releases</h3>
+      <ul>
+        <li>"Echoes of the Past"</li>
+        <li>"Cooking with Magic"</li>
+        <li>"Digital Minds: AI in Books"</li>
+        <li>"Legends Reborn"</li>
+      </ul>
+
+      <h3>Top Authors</h3>
+      <ul>
+        <li>Neil Page</li>
+        <li>Sarah Inkheart</li>
+        <li>Marcus Reed</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Book World | Read more, learn more, grow more.</p>
+  </footer>
+
+</body>
+</html>
