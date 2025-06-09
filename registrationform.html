@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      padding: 20px;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    .container {
+      display: flex;
+      min-height: 600px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .left, .right {
+      width: 40%; /* Smaller sidebars */
+      padding: 20px;
+      box-sizing: border-box;
+      border-right: 1px solid black;
+    }
+
+    .right {
+      border-right: none;
+      border-left: 1px solid black;
+      text-align: center;
+    }
+
+    .content {
+      width: 40%; /* More space for the form */
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select {
+      padding: 8px;
+      width: 100%;
+    }
+
+    .gender-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Registration Form</h1>
+  </header>
+
+  <div class="container">
+    <div class="left">
+     <h3>Why Register?</h3>
+      <ul>
+       <li>Get access to free e-books</li>
+       <li>Receive book recommendations</li>
+       <li>Track your reading history</li>
+       <li>Join reading challenges</li>
+      </ul>
+
+     <h3>Library Features</h3>
+      <ul>
+       <li>Access thousands of physical & digital books</li>
+       <li>Use free internet and computer stations</li>
+       <li>Quiet study and reading zones</li>
+       <li>Children's corner with learning tools</li>
+       <li>Newspapers and magazines available daily</li>
+       <li>Attend workshops and book clubs</li>
+       <li>Reserve and borrow books online</li>
+       <li>Friendly librarian support</li>
+      </ul>
+
+     <p><em>"Libraries are the backbone of any civilized society."</em></p>
+    </div>
+
+
+
+    <div class="content">
+      <form action="success.html">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd">
+
+        <label for="cpwd">Confirm Password:</label>
+        <input type="password" id="cpwd" name="cpwd">
+
+        <label>Gender:</label>
+        <div class="gender-group">
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="Other">
+          <label for="other">Other</label>
+        </div>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="">--Select Country--</option>
+          <option value="afghanistan">Afghanistan</option>
+          <option value="australia">Australia</option>
+          <option value="bangladesh">Bangladesh</option>
+          <option value="canada">Canada</option>
+          <option value="china">China</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="india">India</option>
+          <option value="japan">Japan</option>
+          <option value="malaysia">Malaysia</option>
+          <option value="nepal">Nepal</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="russia">Russia</option>
+          <option value="south_korea">South Korea</option>
+          <option value="sri_lanka">Sri Lanka</option>
+          <option value="united_kingdom">United Kingdom</option>
+          <option value="united_states">United States</option>
+        </select>
+
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo">
+
+        <input type="submit" value="Register">
+      </form>
+    </div>
+
+    <div class="right">
+     <img src="https://images.unsplash.com/photo-1604866830893-c13cafa515d5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="120" height="120"alt="Library photo">
+     <p><em>"Libraries store the energy that fuels the imagination."</em></p>
+     <br>
+     <img src="https://plus.unsplash.com/premium_photo-1668198393221-1cfc06535566?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVhZGVyfGVufDB8fDB8fHww" width="120" height="120" alt="Reader photo">
+     <p><em>"A reader lives a thousand lives before he dies."</em></p>
+     <br>
+     <img src="https://plus.unsplash.com/premium_photo-1677187301660-5e557d9c0724?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="120" height="120" alt="Book Photo">
+     <p><em>"Books are a uniquely portable magic."</em></p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 BookClub Registration</p>
+  </footer>
+
+</body>
+</html>
+
